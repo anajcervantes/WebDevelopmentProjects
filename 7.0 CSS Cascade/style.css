@@ -1,11 +1,18 @@
 /* Don't change the existing CSS. */
+#outer-box{
+  background-color: purple;
+}
 
-.box {
+.box { /*existing*/
   background-color: blue;
   padding: 10px;
 }
 
-p {
+.inner-box{
+  background-color: red;
+}
+
+p { /* existing*/
   color: yellow;
   margin: 0;
   padding: 0;
@@ -13,12 +20,4 @@ p {
 
 .white-text{
   color: white;
-}
-
-.inner-box{
-  background-color: red;
-}
-
-#outer-box{
-  background-color: purple;
 }
