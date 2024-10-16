@@ -5,34 +5,51 @@
   <meta charset="UTF-8">
   <title>CSS Flag Project</title>
   <style>
-    /* Write your CSS Code here */
+    /* red rectangle */
     .flag{
       background-color: #ce1126;
       width: 900px;
       height: 600px;
+      position: relative; /*we can modify children's positions relative to this parent */
     }
 
+    /*blue rectangle */
     .flag > div{
-      background-color: blue;
+      background-color: #002868;
       width: 900px;
       height: 300px;
-      margin-top: 15%;
+      position: absolute; /*move blue rectangle relative to the parent*/
+      top: 150px;
     }
     
+    /*white circle */
     .flag > div > div{
       background-color: white;
       width: 200px;
       height: 200px;
       border-radius: 50%;
-      position: absolute;
-      left: 40%;
-      top: 30%;
+      position: relative;
+      top: 50px;
+      left: 350px;
     }
 
+    /*The circle is not quite centered because of the "of Laos" 
+    text box. <p> have default margin top and bottom, so set them
+    to 0 so they're not affecting the positioning of the circle.
+    Target all text since it is all the same size and centered. */
+    p{
+      margin: 0;
+      font-size: 5rem; 
+      text-align: center;
+    }
+
+    /* I didn't like her funky solution of targeting the "of Laos" text
+    to color it black. I prefer to leave the default black text in the <p>
+    but target "The Flag" and color it white, since it's easier to target
+    with CSS selectors.*/
     .flag > p{
       color: white;
-      margin-top: 0;
-      text-align: center;
+      
     }
 
     
