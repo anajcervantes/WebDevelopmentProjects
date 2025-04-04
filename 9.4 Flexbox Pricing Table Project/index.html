@@ -11,10 +11,64 @@
     <style>
       body {
         font-family: "Sono", sans-serif;
+       
+      }
+
+      .pricing-container{
+        /*Good way of centering things */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 2rem;
       }
 
       /* Hint: What can you do with a media query and flexbox? */
       @media (max-width: 1250px) {
+        .pricing-container{
+          flex-direction: column;
+          height: 100%;
+        }
+
+        
+      }
+
+      .pricing-plan{
+        flex: 1; /*Equal in width, allowed to grow and shrink */
+        background-color: rgb(192, 187, 187);
+        max-width: 400px;
+        text-align: center;
+        padding: 20px;
+      
+      }
+
+      .plan-title{
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .plan-price{
+        font-size: 48px;
+        font-weight: bold;
+      }
+
+      .plan-features{
+        list-style: none;
+        font-weight: bold;
+        padding: 0;
+        
+      }
+
+      .plan-features li{
+        margin-bottom: 20px
+      }
+
+      .plan-button{
+        color: white;
+        background-color: rgb(255, 94, 0);
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
       }
     </style>
   </head>
