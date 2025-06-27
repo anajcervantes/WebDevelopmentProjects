@@ -5,5 +5,7 @@ for(var i=0; i < document.querySelectorAll(".drum").length; i++){
 }
 
 function handleClick(){
-    alert("I was clicked!");
+    //alert("I was clicked!");
+    var audio = new Audio('sounds/tom-1.mp3');
+    audio.play();
 }
