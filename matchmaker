@@ -1,0 +1,17 @@
+prompt("Your name: ");
+prompt("Their name: ");
+
+var n = Math.random() * 100;
+n = Math.floor(n) + 1;
+
+if(n > 70){
+    alert("You are " + n + "% compatible! You love each other like Kanye loves Kanye.");
+} 
+if(n > 30 && n <= 70){
+    alert("You are " + n + "% compatible!");
+}
+if(n <= 30){
+    alert("You are " + n + "% compatible! You go together like oil and water.");
+}
+
+var randomNumber1 = Math.random() *6;
